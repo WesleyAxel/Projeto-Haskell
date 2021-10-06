@@ -1,0 +1,64 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           Projeto
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/ufabc-bcc/paradigmas-2021-q2-projeto-final-WesleyAxel>
+homepage:       https://github.com/github.com/ufabc-bcc#readme
+bug-reports:    https://github.com/github.com/ufabc-bcc/issues
+author:         Wesley Axel de Barros
+maintainer:     w.barros@aluno.ufabc.edu.br
+copyright:      2021 Wesley Axel
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/github.com/ufabc-bcc
+  subdir: paradigmas-2021-q2-projeto-final-WesleyAxel
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_Projeto
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , binary >=0.8.8.0
+    , bytestring >=0.10.12.0
+    , containers >=0.6.2.1
+    , lzo >=0.1.0.0
+    , threepenny-gui >=0.9
+    , timeit >=2.0
+    , utf8-string >=0.10.12.0
+  default-language: Haskell2010
+
+executable Projeto-exe
+  main-is: Main.hs
+  other-modules:
+      Huffman
+      LZO
+      LZW
+      Paths_Projeto
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Projeto
+    , base >=4.7 && <5
+    , binary
+    , bytestring
+    , containers
+    , lzo
+    , threepenny-gui
+    , timeit
+    , utf8-string
+  default-language: Haskell2010

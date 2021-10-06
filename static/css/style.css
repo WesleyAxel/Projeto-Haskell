@@ -1,0 +1,49 @@
+body {
+    background-color: #BDF1E4;
+}
+
+h1{
+    font-family: Trebuchet MS;
+    font-size: 60px;
+    text-align: center;
+}
+
+h2{
+    font-family: Trebuchet MS;
+}
+
+p,span,a{
+    font-family: Trebuchet MS;   
+}
+
+a{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+textarea{
+    text-align: left;
+    width:80%;
+    height:80px;
+}
+
+button{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+#explicacao{
+  text-align: left;
+  font-weight: bold;
+}
